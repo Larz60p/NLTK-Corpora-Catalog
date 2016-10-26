@@ -41,7 +41,6 @@ class CorporaData:
             recid = 'RecId{}'.format(n)
             for item in innertags:
                 value = package.get(item)
-                print('RecId: {}, item: {}, value: {}'.format(recid, item, value))
                 self.corpora[recid][item] = value
 
         with open("corpora.json", "w") as f:
