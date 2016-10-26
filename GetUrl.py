@@ -27,9 +27,3 @@ class GetUrl:
                 return rdata
         except:
             print("Unexpected error:", sys.exc_info()[0])
-
-if __name__ == '__main__':
-    url = 'ftp://ftp.nasdaqtrader.com/symboldirectory/phlxListedStrikesWithOptionIds.zip'
-    tofile = 'G:\python\stock_market\symbols\data\DailyFiles\\USA\phlxListedStrikesWithOptionIds.zip'
-    p = GetUrl()
-    p.get_url(url, tofile, bin=True)
